@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Final assignment</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+  </head>
+  <body>
+    <!--<img src="images/background.jpg" alt="Background">-->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    <div class="container">
+      <h1>Contact me!</h1>
+        <p>Fill out this form and let me know how can I help!</p>
+
+    </div>
+    <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+      <div class="first-name input-section">
+        <label for="firstname" class="label_input_wrap">First Name:</label>
+        <input type="text" name= "req_firstname" id="firstname" placeholder="First Name"/>
+      </div>
+
+      <div class="last-name input-section">
+        <label for="lastname" class="label_input_wrap">Last Name:</label>
+        <input type="text" name= "lastname" id="lastname" placeholder="Last Name"/>
+      </div>
+
+      <div class="email input-section">
+        <label for="email" class="label_input_wrap">Email:</label>
+        <input type="email" name= "req_email" id="email" placeholder="ejaegr@gmail.com" />
+      </div>
+
+      <div class="telephone input-section">
+        <label for="telephone" class="label_input_wrap">Telephone:</label>
+        <input type="tel" name= "telephone" id="telephone" placeholder="555-555-5555" />
+      </div>
+
+      <div class="comments input-section">
+        <label for="comments" class="label_input_wrap">Comments:</label>
+        <textarea name="comments" id="comments" cols="50" rows="5" placeholder="Your comment goes here"></textarea>
+      </div>
+
+
+      <div class="radiobutton input-section">
+        <h3>Contact method</h3>
+          <input type="radio" name="contact" value="e-mail" id="e-mail"/><label for="e-mail">Email</label>
+          <input type="radio" name="contact" value="Phone" id="Phone"/><label for="Phone">Telephone</label>
+      </div>
+
+      <div class="dropdown input-section">
+        <label for="days" class="label_input_wrap">When do you want to be contacted</label>
+        <select name="days" id="days">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="ASAP">ASAP</option>
+        </select>
+      </div>
+
+      <div class="reset input-section">
+        <input type="reset" />
+      </div>
+
+      <div class="submit input-section">
+        <input type="submit" value="Send me a message!"/>
+      </div>
+    </form>
+        <footer>
+          Portfolio by Luis Pacheco
+        </footer>
+      </main>
+
+  </body>
+</html>
