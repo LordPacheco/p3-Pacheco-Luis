@@ -6,13 +6,12 @@
   font-family: sans-serif;
 }
 body{
-  background: url('../images/background.jpg') #374461;
-  width: 1350px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
+    background: url("../images/background.jpg") #374461;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+  }
 .container{
   max-width: 1350px;
   margin: 50px auto 80px;
